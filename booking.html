@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Booking | Lori Munizzi Carlson</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand"><a href="index.html">LORI MUNIZZI CARLSON</a></div>
+      <nav class="navlinks">
+        <a href="about.html">About</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <p class="kicker">Booking</p>
+      <h1 class="h1" style="color: var(--text);">Booking Inquiry</h1>
+      <p class="note">Complete the form below. You will receive a response within 3–5 business days.</p>
+
+      <div class="card" style="margin-top: 16px;">
+        <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" required />
+          </div>
+
+          <div class="field">
+            <label for="org">Organization or Church</label>
+            <input id="org" name="organization" />
+          </div>
+
+          <div class="grid-2" style="grid-template-columns: 1fr 1fr;">
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" />
+            </div>
+          </div>
+
+          <div class="grid-2" style="grid-template-columns: 1fr 1fr;">
+            <div class="field">
+              <label for="date">Event Date</label>
+              <input id="date" name="event_date" type="date" />
+            </div>
+            <div class="field">
+              <label for="location">Location (City, State)</label>
+              <input id="location" name="location" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="type">Type of Event</label>
+            <select id="type" name="event_type">
+              <option>Sunday Service</option>
+              <option>Women’s Conference</option>
+              <option>Retreat</option>
+              <option>Worship Night</option>
+              <option>Speaking Engagement</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="attendance">Estimated Attendance</label>
+            <input id="attendance" name="attendance" />
+          </div>
+
+          <div class="field">
+            <label for="details">Additional Details</label>
+            <textarea id="details" name="details"></textarea>
+          </div>
+
+          <button class="btn" type="submit">Submit Inquiry</button>
+          <p class="note">To receive submissions by email for free, create a Formspree form and replace YOUR_FORM_ID.</p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

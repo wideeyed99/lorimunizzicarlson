@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Lori Munizzi Carlson</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand"><a href="index.html">LORI MUNIZZI CARLSON</a></div>
+      <nav class="navlinks">
+        <a href="about.html">About</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <p class="kicker">Contact</p>
+      <h1 class="h1" style="color: var(--text);">Contact</h1>
+
+      <div class="card" style="margin-top: 16px;">
+        <p class="p"><strong>Booking:</strong> booking@lorimunizzi.com</p>
+        <p class="p"><strong>Based in:</strong> Nashville, Tennessee</p>
+        <p class="note">For event requests, use the Booking page so details do not get lost.</p>
+
+        <a class="btn" href="booking.html">Booking Inquiry</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="y"></span> Lori Munizzi Carlson
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
